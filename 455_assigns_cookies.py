@@ -7,6 +7,7 @@ class Solution:
                 if children  <= cookie:
                     sorter["satisfied"].append(children)
                     s.remove(cookie)
+                    g.remove(children)
                     break
                 else:
                     sorter["unstaisfied"].append(children)
